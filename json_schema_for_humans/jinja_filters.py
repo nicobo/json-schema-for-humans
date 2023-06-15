@@ -104,6 +104,11 @@ def get_description(env: Environment, schema_node: SchemaNode) -> str:
     return description
 
 
+def get_comment(schema_node: SchemaNode) -> str:
+    """Filter. Return the $comment for a property"""
+    return schema_node.comment
+
+
 def get_default(schema_node: SchemaNode) -> str:
     """Filter. Return the default value for a property"""
     return schema_node.default_value

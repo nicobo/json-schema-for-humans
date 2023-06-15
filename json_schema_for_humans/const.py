@@ -13,6 +13,7 @@ TYPE_OBJECT = "object"
 TYPE_STRING = "string"
 
 DESCRIPTION = "description"
+COMMENT = "$comment"
 DEFAULT = "default"
 EXAMPLES = "examples"
 ITEMS = "items"

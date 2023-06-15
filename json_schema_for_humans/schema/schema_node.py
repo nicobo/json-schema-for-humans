@@ -265,6 +265,14 @@ class SchemaNode:
         return description
 
     @property
+    def comment(self) -> str:
+        comment_node = self.keywords.get(const.COMMENT)
+        if comment_node:
+            return comment_node.literal
+        else:
+            return ""
+
+    @property
     def examples(self) -> List[str]:
         possible_examples = self.keywords.get(const.EXAMPLES)
         if not possible_examples:

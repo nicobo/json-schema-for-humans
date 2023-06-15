@@ -1,0 +1,12 @@
+{
+  "$id": "https://github.com/nicobo/json-schema-for-humans/tests/montest/schema-with-comments.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Test schema with $comment",
+  "properties": {
+    "aRoot": {
+      "$comment": "A comment",
+      "description" : "A description",
+      "type": "object"
+    }
+  }
+}

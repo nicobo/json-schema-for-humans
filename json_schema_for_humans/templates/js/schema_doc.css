@@ -39,6 +39,12 @@ body {
     content: "hide"
 }
 
+.comment {
+  background-color: #FFF1C5;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
 .description.collapse:not(.show) {
     max-height: 100px !important;
     overflow: hidden;
