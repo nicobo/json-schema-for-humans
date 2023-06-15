@@ -8,6 +8,12 @@ Quickly generate a beautiful static HTML or Markdown page documenting a JSON sch
 
 ## Features
 
+**Specific to this fork** :
+
+- Displays `$comment` (author's comment) in the *js* template (only, for now)
+
+*Inherited from the original project* :
+
 - Support for JSON Schema Draft-07
 - Since the result is static, it is easier to host and faster to load
 - HTML and Markdown output support
@@ -39,7 +45,7 @@ generate-schema-doc [OPTIONS] SCHEMA_FILES_OR_DIR [RESULT_FILE_OR_DIR]
 
 `SCHEMA_FILES_OR_DIR` can be:
 - a path to a single schema file;
-- a path to a directory, in this case all files with extensions json, yaml, or yml will be used; 
+- a path to a directory, in this case all files with extensions json, yaml, or yml will be used;
 - a [glob pattern](https://docs.python.org/3/library/pathlib.html#pathlib.Path.glob) (starts from the current working directory); or
 - a comma-separated list of the above
 
@@ -165,7 +171,7 @@ This is the default template. It uses Bootstrap along with minimal Javascript to
 
 - Properties are in expandable dynamic sections. You can include a button to expand or collapse all. (See doc: [HTML version](https://coveooss.github.io/json-schema-for-humans/examples/examples_js_default/Configuration.html#expand_buttons) - [Markdown version](https://github.com/coveooss/json-schema-for-humans/blob/main/docs/examples/examples_md_default/Configuration.md#expand_buttons))
 - Conditional subschemas (`anyOf`, `oneOf`, `allOf`) are in tabbed sections
-- Anchor links will scroll to, expand, and animate the target section 
+- Anchor links will scroll to, expand, and animate the target section
 - Long descriptions are collapsed by default
 
 When using this template, you need to include the Javascript file (`schema_doc.min.js`) that is automatically copied next to the output HTML file (`schema_doc.html` by default).
